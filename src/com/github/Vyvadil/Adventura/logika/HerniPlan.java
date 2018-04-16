@@ -73,21 +73,21 @@ public class HerniPlan extends Observable{
         aktualniProstor = hrad; 
         
         // věci
-        Vec zlato = new Vec("Zlato", true,"x.jpg");
-        Vec zub = new Vec("Dračí_zub", true,"x.jpg");
-        Vec sekera = new Vec("Obouruční_sekera", false,"x.jpg");
-        Vec zlato1 = new Vec ("Zlato", true,"x.jpg");
-        Vec kost = new Vec ("Kost", true,"x.jpg");
-        Vec zelezo = new Vec("Kus_železa", true,"x.jpg");
-        Vec truhla = new Vec("Truhla", false,"x.jpg");
-        Vec ebenoveDrevo = new Vec("Ebenové_dřevo",true,"x.jpg");
-        Vec sip = new Vec("Jedovatý_šíp", true,"x.jpg");
-        Vec stribro = new Vec("Stříbro",false,"x.jpg");
-        Vec chleba = new Vec("Chleba",true,"x.jpg");
-        Vec ocel = new Vec("Ocel", true,"x.jpg");
-        Vec draci_lektvar = new Vec("Dračí_lektvar", true,"x.jpg");
-        Vec kura = new Vec("Posvátná_kůra", true,"x.jpg");
-        Vec kouzelne_diamanty = new Vec ("Kouzelné_diamanty", true,"x.jpg");            
+        Vec zlato = new Vec("Zlato", true,"zlato.jpg");
+        Vec zub = new Vec("Dračí_zub", true,"draci_zub.jpg");
+        Vec sekera = new Vec("Obouruční_sekera", false,"obourucni_sekera.jpg");
+        Vec zlato1 = new Vec ("Zlato", true,"zlato.jpg");
+        Vec kost = new Vec ("Kost", true,"kost.jpg");
+        Vec zelezo = new Vec("Kus_železa", true,"kus_zeleza.jpg");
+        Vec truhla = new Vec("Truhla", false,"truhla.jpg");
+        Vec ebenoveDrevo = new Vec("Ebenové_dřevo",true,"ebenove_drevo.jpg");
+        Vec sip = new Vec("Jedovatý_šíp", true,"jedovaty_sip.jpg");
+        Vec stribro = new Vec("Stříbro",false,"stribro.jpg");
+        Vec chleba = new Vec("Chleba",true,"chleba.jpg");
+        Vec ocel = new Vec("Ocel", true,"ocel.jpg");
+        Vec draci_lektvar = new Vec("Dračí_lektvar", true,"lektvar.jpg");
+        Vec kura = new Vec("Posvátná_kůra", true,"kura.jpg");
+        Vec kouzelne_diamanty = new Vec ("Kouzelné_diamanty", true,"diamanty.jpg");            
                 
         // vkládání věcí do místností
         hrad.vlozVec(zelezo);
