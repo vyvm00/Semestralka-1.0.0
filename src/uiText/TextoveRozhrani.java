@@ -1,8 +1,8 @@
-package com.github.Vyvadil.Adventura.logika;
+package uiText;
 
 
 import java.util.Scanner;
-import com.github.Vyvadil.Adventura.logika.IHra;
+import logika.IHra;
 /**
  *  Class TextoveRozhrani
  * 
@@ -31,10 +31,9 @@ public class TextoveRozhrani {
      *  příkazu od hráče do konce hry (dokud metoda konecHry() z logiky nevrátí
      *  hodnotu true). Nakonec vypíše text epilogu.
      */
-    public void hraj() 
-    {
+    public void hraj() {
         System.out.println(hra.vratUvitani());
-        System.out.println(hra.getHerniPlan().getAktualniProstor().dlouhyPopis());
+
         // základní cyklus programu - opakovaně se čtou příkazy a poté
         // se provádějí do konce hry.
 

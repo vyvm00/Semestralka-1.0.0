@@ -1,4 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -34,12 +34,6 @@ public class Batoh {
         }
             return false;
     }
-
-    public Map<String, Vec> getVeci() {
-        return veci;
-    }
-    
-    
     
     
     /**

@@ -1,4 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 
 /**
  * Třída PrikazVyrib implementuje pro hru příkaz vyrob.
@@ -43,7 +43,7 @@ public class PrikazVyrob implements IPrikaz
                 batoh.odeberVec("Posvátná_kůra");
                 batoh.odeberVec("Kouzelné_diamanty"); 
                 //vytvoří meč
-                Vec kouzelnyMec = new Vec("Kouzelný_meč", true,"kouzelny_mec.jpg");
+                Vec kouzelnyMec = new Vec("Kouzelný_meč", true);
                 batoh.pridejVec(kouzelnyMec);
                 //otevře výherní místnost
                 plan.otevriDoupe();

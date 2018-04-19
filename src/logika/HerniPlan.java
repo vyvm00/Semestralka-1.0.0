@@ -1,6 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
-
-import java.util.Observable;
+package logika;
 
 /**
  *  Class HerniPlan - třída představující mapu a stav adventury.
@@ -13,7 +11,7 @@ import java.util.Observable;
  *@author     Michael Kolling, Lubos Pavlicek, Jarmila Pavlickova, Martin Vyvadil
  *@version    pro školní rok 2016/2017
  */
-public class HerniPlan extends Observable{
+public class HerniPlan {
     
     private Prostor aktualniProstor;
     private Prostor vyherniProstor;
@@ -34,19 +32,19 @@ public class HerniPlan extends Observable{
      */
     private void zalozProstoryHry() {
         // vytvářejí se jednotlivé prostory
-        Prostor hrad = new Prostor("Hrad", "Krásný hrad s výhledem na pole,louky a lesy.\n Život zde by byl ideální, kdyby místní obyvatelstvo neohrožoval obáváný drak.",150,0);
-        Prostor pole = new Prostor ("Pole", "Pšenice, žito, kukuřici a další zde pěstuje místní obyvatelstvo.",0,0);
-        Prostor les = new Prostor ("Les", "Cítíš ten čerstvý vzduch? Tento les doslova chrlí energií a životem.",150,80);
-        Prostor louka = new Prostor ("Louka", "Krásna rozkvetlá louka",0,80);
+        Prostor hrad = new Prostor("Hrad", "Krásný hrad s výhledem na pole,louky a lesy.\n Život zde by byl ideální, kdyby místní obyvatelstvo neohrožoval obáváný drak.");
+        Prostor pole = new Prostor ("Pole", "Pšenice, žito, kukuřici a další zde pěstuje místní obyvatelstvo.");
+        Prostor les = new Prostor ("Les", "Cítíš ten čerstvý vzduch? Tento les doslova chrlí energií a životem.");
+        Prostor louka = new Prostor ("Louka", "Krásna rozkvetlá louka");
         Prostor poustevnikova_jeskyne = new Prostor ("Poustevníkova_jeskyně", "Říká se, že zde bydleli lidé už pred tísíci lety. \n"
-        + "Dnešní dny se zde usadil starý poustevník ,který zná různou magii",250,80);
+        + "Dnešní dny se zde usadil starý poustevník ,který zná různou magii");
         reka = new Prostor ("Řeka", "Někdy klidná, při deštích však divoká. Převozník vás za zlatku převeze na druhou stranu.\n"
-        + "Dávejte si, ale pozor, za řekou vás nečeká nic dobrého.",150,160);
-        Prostor pustina = new Prostor ("Pustina", "Zde bývalo krásné království. Drak však vše zničil a co nezničil tak uteklo.",150,230);
-        zacarovany_les = new Prostor("Začarovaný_les", "Nic zde v pořádku, radši odtud prchej ať se ti něco nestane.",150,300);
+        + "Dávejte si, ale pozor, za řekou vás nečeká nic dobrého.");
+        Prostor pustina = new Prostor ("Pustina", "Zde bývalo krásné království. Drak však vše zničil a co nezničil tak uteklo.");
+        zacarovany_les = new Prostor("Začarovaný_les", "Nic zde v pořádku, radši odtud prchej ať se ti něco nestane.");
         Prostor trpaslici_zeme = new Prostor("Trpasličí_země", "V horách se nacházejí tyto zajímavé stvoření.\n"
-        + "Když se objeví Drak schovají se v různých skrýších a podzemních chodbách",0,300);
-        Prostor rise_elfu = new Prostor ("Říše_elfů", "Elfové jsou lidé hodní, nepustí si k sobě však každého. \n Chovej se k ním slušně a oni tě pohostí.",250,300);
+        + "Když se objeví Drak schovají se v různých skrýších a podzemních chodbách");
+        Prostor rise_elfu = new Prostor ("Říše_elfů", "Elfové jsou lidé hodní, nepustí si k sobě však každého. \n Chovej se k ním slušně a oni tě pohostí.");
                 
         // přiřazují se průchody mezi prostory (sousedící prostory)
         hrad.setVychod(pole);
@@ -73,21 +71,21 @@ public class HerniPlan extends Observable{
         aktualniProstor = hrad; 
         
         // věci
-        Vec zlato = new Vec("Zlato", true,"zlato.jpg");
-        Vec zub = new Vec("Dračí_zub", true,"draci_zub.jpg");
-        Vec sekera = new Vec("Obouruční_sekera", false,"obourucni_sekera.jpg");
-        Vec zlato1 = new Vec ("Zlato", true,"zlato.jpg");
-        Vec kost = new Vec ("Kost", true,"kost.jpg");
-        Vec zelezo = new Vec("Kus_železa", true,"kus_zeleza.jpg");
-        Vec truhla = new Vec("Truhla", false,"truhla.jpg");
-        Vec ebenoveDrevo = new Vec("Ebenové_dřevo",true,"ebenove_drevo.jpg");
-        Vec sip = new Vec("Jedovatý_šíp", true,"jedovaty_sip.jpg");
-        Vec stribro = new Vec("Stříbro",false,"stribro.jpg");
-        Vec chleba = new Vec("Chleba",true,"chleba.jpg");
-        Vec ocel = new Vec("Ocel", true,"ocel.jpg");
-        Vec draci_lektvar = new Vec("Dračí_lektvar", true,"lektvar.jpg");
-        Vec kura = new Vec("Posvátná_kůra", true,"kura.jpg");
-        Vec kouzelne_diamanty = new Vec ("Kouzelné_diamanty", true,"diamanty.jpg");            
+        Vec zlato = new Vec("Zlato", true);
+        Vec zub = new Vec("Dračí_zub", true);
+        Vec sekera = new Vec("Obouruční_sekera", false);
+        Vec zlato1 = new Vec ("Zlato", true);
+        Vec kost = new Vec ("Kost", true);
+        Vec zelezo = new Vec("Kus_železa", true);
+        Vec truhla = new Vec("Truhla", false);
+        Vec ebenoveDrevo = new Vec("Ebenové_dřevo",true);
+        Vec sip = new Vec("Jedovatý_šíp", true);
+        Vec stribro = new Vec("Stříbro",false);
+        Vec chleba = new Vec("Chleba",true);
+        Vec ocel = new Vec("Ocel", true);
+        Vec draci_lektvar = new Vec("Dračí_lektvar", true);
+        Vec kura = new Vec("Posvátná_kůra", true);
+        Vec kouzelne_diamanty = new Vec ("Kouzelné_diamanty", true);            
                 
         // vkládání věcí do místností
         hrad.vlozVec(zelezo);
@@ -144,7 +142,7 @@ public class HerniPlan extends Observable{
      */
     
     public void otevriDoupe() {
-        Prostor draciDoupe = new Prostor("Dračí_doupě", "Po dlouhém krvavém boji porážíš Draka!",150,370);
+        Prostor draciDoupe = new Prostor("Dračí_doupě", "Po dlouhém krvavém boji porážíš Draka!");
         zacarovany_les.setVychod(draciDoupe);
         vyherniProstor = draciDoupe;        
     }
@@ -153,15 +151,9 @@ public class HerniPlan extends Observable{
      * Otevře prostor Pustina, po zaplacení převozníkovi.
      */
     public void otevriProstor() {
-        Prostor pustina = new Prostor("Pustina", "Zde bývalo krásné království. Drak však vše zničil a co nezničil tak uteklo.",150,230);
+        Prostor pustina = new Prostor("Pustina", "Zde bývalo krásné království. Drak však vše zničil a co nezničil tak uteklo.");
         reka.setVychod(pustina);
         pustina.setVychod(reka);
         pustina.setVychod(zacarovany_les);
-    }
-    // Metoda která zajištuje, že při upozornění pozorovatele se všichni pozorvatelé změní.
-    @Override
-    public void notifyObservers(){
-        setChanged();
-        super.notifyObservers();
     }
 }

@@ -1,4 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 
 /**
  *  Třída implementující toto rozhraní bude ve hře zpracovávat jeden konkrétní příkaz.

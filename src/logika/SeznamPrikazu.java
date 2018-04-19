@@ -1,4 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 
 import java.util.HashMap;
 import java.util.Map;

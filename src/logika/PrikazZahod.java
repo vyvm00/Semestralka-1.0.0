@@ -1,4 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 
 /**
  * Třída PrikazZahod implementuje pro hru příkaz zahod.

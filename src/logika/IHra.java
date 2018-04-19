@@ -1,6 +1,6 @@
 /* Soubor je ulozen v kodovani UTF-8.
  * Kontrola kódování: Příliš žluťoučký kůň úpěl ďábelské ódy. */
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 
 /**
  *  Rozhraní které musí implementovat hra, je na ně navázáno uživatelské rozhraní

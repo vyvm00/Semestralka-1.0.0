@@ -1,4 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 
 import java.util.*;
 
@@ -28,8 +28,6 @@ public class Prostor {
     private String popis;
     private Set<Prostor> vychody;   // obsahuje sousední místnosti
     private Map<String, Vec> veci;
-    private double x;
-    private double y;
 
     /**
      * Vytvoření prostoru se zadaným popisem, např. "kuchyň", "hala", "trávník
@@ -39,13 +37,11 @@ public class Prostor {
      * víceslovný název bez mezer.
      * @param popis Popis prostoru.
      */
-    public Prostor(String nazev, String popis, double x, double y) {
+    public Prostor(String nazev, String popis) {
         this.nazev = nazev;
         this.popis = popis;
         vychody = new HashSet<>();
         veci = new HashMap<>();
-        this.x = x;
-        this.y = y;
     }
 
     /**
@@ -214,29 +210,5 @@ public class Prostor {
      */    
     public boolean jeVecVProstoru(String nazevVeci) {
         return veci.containsKey(nazevVeci);
-    }
-    
-    public double getX() 
-    {
-	return x;
-    }
-
-    public double getY() 
-    {
-	return y;
-    }
-        
-    public String seznamVychodu() 
-    {
-        String vracenyText = "vychody:";
-        for (Prostor sousedni : vychody) 
-        {
-             vracenyText += " " + sousedni.getNazev();
-        }
-        return vracenyText;
-    }
-
-    public Map<String, Vec> getVeci() {
-        return veci;
     }
 }

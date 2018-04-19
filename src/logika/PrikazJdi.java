@@ -1,4 +1,4 @@
-package com.github.Vyvadil.Adventura.logika;
+package logika;
 
 /**
  *  Třída PrikazJdi implementuje pro hru příkaz jdi.
